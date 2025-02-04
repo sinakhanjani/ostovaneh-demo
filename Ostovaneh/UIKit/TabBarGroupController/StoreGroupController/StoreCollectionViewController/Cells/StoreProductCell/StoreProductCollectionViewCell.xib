@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="dark"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="IRANSansXBold.ttf">
+            <string>IRANSansX-Bold</string>
+        </array>
+        <array key="IRANSansXMedium.ttf">
+            <string>IRANSansX-Medium</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="StoreProductCollectionViewCell" id="gTV-IL-0wX" customClass="StoreProductCollectionViewCell" customModule="Ostovaneh" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="190" height="334"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="190" height="334"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="E6Y-3e-rVH">
+                        <rect key="frame" x="0.0" y="0.0" width="190" height="334"/>
+                        <subviews>
+                            <stackView opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" axis="vertical" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="YTz-D5-GlU">
+                                <rect key="frame" x="0.0" y="0.0" width="190" height="334"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="X0H-I9-Ksi">
+                                        <rect key="frame" x="0.0" y="0.0" width="190" height="259"/>
+                                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="4"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </imageView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="H78-vG-8Oc">
+                                        <rect key="frame" x="0.0" y="263" width="190" height="71"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="کتک‌کاری با کفش" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xAE-ND-iiM">
+                                                <rect key="frame" x="0.0" y="0.0" width="190" height="21"/>
+                                                <fontDescription key="fontDescription" name="IRANSansX-Bold" family="IRANSansX" pointSize="14"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" translatesAutoresizingMaskIntoConstraints="NO" id="nrY-qP-08A">
+                                                <rect key="frame" x="0.0" y="25" width="190" height="21"/>
+                                                <subviews>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="SFb-l7-sCb">
+                                                        <rect key="frame" x="0.0" y="0.0" width="34" height="21"/>
+                                                        <subviews>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="۶،۴۰۰" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="whn-71-8nN">
+                                                                <rect key="frame" x="0.0" y="0.0" width="34" height="21"/>
+                                                                <fontDescription key="fontDescription" name="IRANSansX-Medium" family="IRANSansX" pointSize="14"/>
+                                                                <color key="textColor" systemColor="secondaryLabelColor"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                        </subviews>
+                                                    </stackView>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="Jad-UB-qrt">
+                                                        <rect key="frame" x="157" y="0.0" width="33" height="21"/>
+                                                        <subviews>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="۴،۰۰۰" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0xa-bw-VHf">
+                                                                <rect key="frame" x="0.0" y="0.0" width="33" height="21"/>
+                                                                <fontDescription key="fontDescription" name="IRANSansX-Medium" family="IRANSansX" pointSize="14"/>
+                                                                <nil key="textColor"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                        </subviews>
+                                                    </stackView>
+                                                </subviews>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" translatesAutoresizingMaskIntoConstraints="NO" id="SJx-PI-2hW">
+                                                <rect key="frame" x="0.0" y="50" width="190" height="21"/>
+                                                <subviews>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="eYx-2v-6XR">
+                                                        <rect key="frame" x="0.0" y="0.0" width="43.5" height="21"/>
+                                                        <subviews>
+                                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="star.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="p0h-BS-2mD">
+                                                                <rect key="frame" x="0.0" y="2" width="16" height="16"/>
+                                                                <color key="tintColor" name="OSTOrange"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="width" constant="16" id="3Bk-uh-gCK"/>
+                                                                    <constraint firstAttribute="height" constant="16" id="h6s-bv-xG9"/>
+                                                                </constraints>
+                                                            </imageView>
+                                                            <label opaque="NO" userInteractionEnabled="NO" alpha="0.30000001192092896" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="۴.۸" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Iwi-si-Zyc">
+                                                                <rect key="frame" x="20" y="0.0" width="23.5" height="21"/>
+                                                                <fontDescription key="fontDescription" name="IRANSansX-Bold" family="IRANSansX" pointSize="14"/>
+                                                                <color key="textColor" systemColor="secondaryLabelColor"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                        </subviews>
+                                                    </stackView>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="3iu-OA-HM3">
+                                                        <rect key="frame" x="119" y="0.0" width="71" height="21"/>
+                                                        <subviews>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="امتیاز کاربران" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8Jp-EH-Pt7">
+                                                                <rect key="frame" x="0.0" y="0.0" width="71" height="21"/>
+                                                                <fontDescription key="fontDescription" name="IRANSansX-Medium" family="IRANSansX" pointSize="14"/>
+                                                                <color key="textColor" systemColor="secondaryLabelColor"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                        </subviews>
+                                                    </stackView>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                            <view alpha="0.0" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cGg-RL-nmb">
+                                <rect key="frame" x="4" y="298" width="30" height="1"/>
+                                <color key="backgroundColor" systemColor="systemRedColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="1" id="t2T-aM-tFx"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="cGg-RL-nmb" firstAttribute="trailing" secondItem="whn-71-8nN" secondAttribute="trailing" id="515-2o-SF7"/>
+                            <constraint firstItem="cGg-RL-nmb" firstAttribute="centerY" secondItem="whn-71-8nN" secondAttribute="centerY" id="6Z9-di-pR5"/>
+                            <constraint firstAttribute="bottom" secondItem="YTz-D5-GlU" secondAttribute="bottom" id="d3o-12-l6q"/>
+                            <constraint firstItem="cGg-RL-nmb" firstAttribute="leading" secondItem="E6Y-3e-rVH" secondAttribute="leading" constant="4" id="da1-to-Yx1"/>
+                            <constraint firstAttribute="trailing" secondItem="YTz-D5-GlU" secondAttribute="trailing" id="nh7-E4-kF2"/>
+                            <constraint firstItem="YTz-D5-GlU" firstAttribute="top" secondItem="E6Y-3e-rVH" secondAttribute="top" id="srF-s3-p48"/>
+                            <constraint firstItem="YTz-D5-GlU" firstAttribute="leading" secondItem="E6Y-3e-rVH" secondAttribute="leading" id="wAo-pK-aJe"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="4"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="E6Y-3e-rVH" secondAttribute="bottom" id="4g5-SL-bWU"/>
+                <constraint firstItem="E6Y-3e-rVH" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="D66-Sh-Otd"/>
+                <constraint firstItem="E6Y-3e-rVH" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="IjJ-Be-cgW"/>
+                <constraint firstAttribute="trailing" secondItem="E6Y-3e-rVH" secondAttribute="trailing" id="x7f-A7-ZAr"/>
+            </constraints>
+            <size key="customSize" width="190" height="334"/>
+            <connections>
+                <outlet property="imageView" destination="X0H-I9-Ksi" id="wRE-nn-m07"/>
+                <outlet property="offPriceLabel" destination="whn-71-8nN" id="xcA-Il-XxW"/>
+                <outlet property="priceLabel" destination="0xa-bw-VHf" id="hZj-2y-qP4"/>
+                <outlet property="rateImageView" destination="p0h-BS-2mD" id="qih-ub-TgX"/>
+                <outlet property="rateLabel" destination="Iwi-si-Zyc" id="Cqk-SI-LZw"/>
+                <outlet property="redLineView" destination="cGg-RL-nmb" id="9Du-YF-3vc"/>
+                <outlet property="titleLabel" destination="xAE-ND-iiM" id="ql6-cU-kW5"/>
+            </connections>
+            <point key="canvasLocation" x="-49.275362318840585" y="194.19642857142856"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="star.fill" catalog="system" width="128" height="116"/>
+        <namedColor name="OSTOrange">
+            <color red="0.93800002336502075" green="0.53799998760223389" blue="0.22300000488758087" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+        </namedColor>
+        <systemColor name="secondaryLabelColor">
+            <color red="0.23529411764705882" green="0.23529411764705882" blue="0.2627450980392157" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemRedColor">
+            <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

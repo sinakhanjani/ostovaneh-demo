@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
+        <capability name="Image references" minToolsVersion="12.0"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="IRANSansXMedium.ttf">
+            <string>IRANSansX-Medium</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="ProductWriteCommentCollectionViewCell" id="gTV-IL-0wX" customClass="ProductWriteCommentCollectionViewCell" customModule="Ostovaneh" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="476" height="270"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="476" height="270"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1IV-Ut-lIJ">
+                        <rect key="frame" x="8" y="8" width="460" height="254"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="L0F-D1-S1m">
+                                <rect key="frame" x="16" y="16" width="428" height="222"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="mMv-7Y-Qjm">
+                                        <rect key="frame" x="0.0" y="0.0" width="428" height="222"/>
+                                        <subviews>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ahI-4a-RpC">
+                                                <rect key="frame" x="0.0" y="0.0" width="428" height="68.5"/>
+                                                <subviews>
+                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="نظر شما درباره این محصول چیست؟" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="M6a-S6-Qz0">
+                                                        <rect key="frame" x="8" y="0.0" width="412" height="68.5"/>
+                                                        <fontDescription key="fontDescription" name="IRANSansX-Medium" family="IRANSansX" pointSize="15"/>
+                                                        <textInputTraits key="textInputTraits"/>
+                                                    </textField>
+                                                </subviews>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                <constraints>
+                                                    <constraint firstItem="M6a-S6-Qz0" firstAttribute="leading" secondItem="ahI-4a-RpC" secondAttribute="leading" constant="8" id="BOf-dw-7Tb"/>
+                                                    <constraint firstAttribute="bottom" secondItem="M6a-S6-Qz0" secondAttribute="bottom" id="YPN-op-pPv"/>
+                                                    <constraint firstAttribute="trailing" secondItem="M6a-S6-Qz0" secondAttribute="trailing" constant="8" id="cNA-Xm-cLJ"/>
+                                                    <constraint firstItem="M6a-S6-Qz0" firstAttribute="top" secondItem="ahI-4a-RpC" secondAttribute="top" id="xsL-sh-vKI"/>
+                                                </constraints>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                        <real key="value" value="8"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Bac-UT-IvP">
+                                                <rect key="frame" x="0.0" y="76.5" width="428" height="69"/>
+                                                <subviews>
+                                                    <view contentMode="center" translatesAutoresizingMaskIntoConstraints="NO" id="tEX-bQ-PeT" customClass="STRatingControl" customModule="Ostovaneh" customModuleProvider="target">
+                                                        <rect key="frame" x="216" y="0.0" width="200" height="69"/>
+                                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <color key="tintColor" name="OSTOrange"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" constant="200" id="mHA-fl-8BM"/>
+                                                        </constraints>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="rating">
+                                                                <integer key="value" value="5"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="maxRating">
+                                                                <integer key="value" value="5"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="image" keyPath="filledStarImage">
+                                                                <imageReference key="value" image="star.fill" catalog="system" symbolScale="large"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="image" keyPath="emptyStarImage">
+                                                                <imageReference key="value" image="star" catalog="system" symbolScale="large"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                        </userDefinedRuntimeAttributes>
+                                                    </view>
+                                                </subviews>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="bottom" secondItem="tEX-bQ-PeT" secondAttribute="bottom" id="IxS-jD-ibv"/>
+                                                    <constraint firstItem="tEX-bQ-PeT" firstAttribute="top" secondItem="Bac-UT-IvP" secondAttribute="top" id="n5B-ZA-eYE"/>
+                                                    <constraint firstAttribute="trailing" secondItem="tEX-bQ-PeT" secondAttribute="trailing" constant="12" id="vkc-s5-Juy"/>
+                                                </constraints>
+                                            </view>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zSD-hq-H47">
+                                                <rect key="frame" x="0.0" y="153.5" width="428" height="68.5"/>
+                                                <color key="backgroundColor" name="OSTBlue"/>
+                                                <fontDescription key="fontDescription" name="IRANSansX-Medium" family="IRANSansX" pointSize="17"/>
+                                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                <state key="normal" title="ثبت نظـر"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                        <real key="value" value="8"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="agreeButtonTapped:" destination="gTV-IL-0wX" eventType="touchUpInside" id="9i8-U0-pa8"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemGroupedBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="L0F-D1-S1m" secondAttribute="bottom" constant="16" id="5II-8F-Tys"/>
+                            <constraint firstAttribute="trailing" secondItem="L0F-D1-S1m" secondAttribute="trailing" constant="16" id="GTr-nU-q8a"/>
+                            <constraint firstItem="L0F-D1-S1m" firstAttribute="leading" secondItem="1IV-Ut-lIJ" secondAttribute="leading" constant="16" id="qfK-ps-1f3"/>
+                            <constraint firstItem="L0F-D1-S1m" firstAttribute="top" secondItem="1IV-Ut-lIJ" secondAttribute="top" constant="16" id="qoV-r8-3MT"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="8"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="1IV-Ut-lIJ" secondAttribute="trailing" constant="8" id="5db-PR-1Q8"/>
+                <constraint firstAttribute="bottom" secondItem="1IV-Ut-lIJ" secondAttribute="bottom" constant="8" id="7uV-hu-ixp"/>
+                <constraint firstItem="1IV-Ut-lIJ" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="8" id="Qay-Dv-lNk"/>
+                <constraint firstItem="1IV-Ut-lIJ" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="8" id="UKe-76-U65"/>
+            </constraints>
+            <size key="customSize" width="476" height="270"/>
+            <connections>
+                <outlet property="agreeButton" destination="zSD-hq-H47" id="MFs-lN-b1d"/>
+                <outlet property="commentTextFiel" destination="M6a-S6-Qz0" id="1u9-Rf-HQi"/>
+                <outlet property="rateControl" destination="tEX-bQ-PeT" id="So8-ZN-SnK"/>
+            </connections>
+            <point key="canvasLocation" x="384.05797101449281" y="168.75"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="star" catalog="system" width="128" height="116"/>
+        <image name="star.fill" catalog="system" width="128" height="116"/>
+        <namedColor name="OSTBlue">
+            <color red="0.13500000536441803" green="0.33199998736381531" blue="0.72200000286102295" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+        </namedColor>
+        <namedColor name="OSTOrange">
+            <color red="0.93800002336502075" green="0.53799998760223389" blue="0.22300000488758087" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGroupedBackgroundColor">
+            <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

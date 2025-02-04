@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="IRANSansXBlack.ttf">
+            <string>IRANSansX-Black</string>
+        </array>
+        <array key="IRANSansXBold.ttf">
+            <string>IRANSansX-Bold</string>
+        </array>
+        <array key="IRANSansXMedium.ttf">
+            <string>IRANSansX-Medium</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="ProductMoreDetailCollectionViewCell" id="gTV-IL-0wX" customClass="ProductMoreDetailCollectionViewCell" customModule="Ostovaneh" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="488" height="201"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="488" height="201"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ieB-yW-0Qs">
+                        <rect key="frame" x="0.0" y="0.0" width="488" height="201"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" text="درباره محصول" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HHL-QQ-Elf">
+                                <rect key="frame" x="0.0" y="0.0" width="488" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="J08-ba-EJg"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="IRANSansX-Black" family="IRANSansX" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" text="" textAlignment="right" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="T29-F7-M7a">
+                                <rect key="frame" x="0.0" y="52" width="488" height="97"/>
+                                <fontDescription key="fontDescription" name="IRANSansX-Medium" family="IRANSansX" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WFJ-mu-aIO">
+                                <rect key="frame" x="0.0" y="157" width="488" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="sne-9q-fs0"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="IRANSansX-Bold" family="IRANSansX" pointSize="17"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="بیشتر">
+                                    <color key="titleColor" name="OSTBlue"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="4"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="moreDescriptionButtonTapped:" destination="gTV-IL-0wX" eventType="touchUpInside" id="JcT-hP-G3F"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="WFJ-mu-aIO" secondAttribute="bottom" id="FrM-jj-08y"/>
+                            <constraint firstItem="WFJ-mu-aIO" firstAttribute="top" secondItem="T29-F7-M7a" secondAttribute="bottom" constant="8" id="NOB-lD-kUf"/>
+                            <constraint firstAttribute="trailing" secondItem="HHL-QQ-Elf" secondAttribute="trailing" id="TDL-Wr-nfW"/>
+                            <constraint firstAttribute="trailing" secondItem="WFJ-mu-aIO" secondAttribute="trailing" id="Tkv-CT-j1p"/>
+                            <constraint firstItem="T29-F7-M7a" firstAttribute="leading" secondItem="ieB-yW-0Qs" secondAttribute="leading" id="VFl-m3-HcX"/>
+                            <constraint firstItem="HHL-QQ-Elf" firstAttribute="leading" secondItem="ieB-yW-0Qs" secondAttribute="leading" id="f5M-Eg-HWE"/>
+                            <constraint firstItem="HHL-QQ-Elf" firstAttribute="top" secondItem="ieB-yW-0Qs" secondAttribute="top" id="pg1-OW-5ey"/>
+                            <constraint firstItem="WFJ-mu-aIO" firstAttribute="leading" secondItem="ieB-yW-0Qs" secondAttribute="leading" id="qj3-W1-jzB"/>
+                            <constraint firstAttribute="trailing" secondItem="T29-F7-M7a" secondAttribute="trailing" id="s65-ch-ZCh"/>
+                            <constraint firstItem="T29-F7-M7a" firstAttribute="top" secondItem="HHL-QQ-Elf" secondAttribute="bottom" constant="8" id="z4d-tJ-Kc3"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstItem="ieB-yW-0Qs" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="9t2-y2-866"/>
+                <constraint firstItem="ieB-yW-0Qs" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="LEe-n3-EK2"/>
+                <constraint firstAttribute="bottom" secondItem="ieB-yW-0Qs" secondAttribute="bottom" id="Npd-1b-xEe"/>
+                <constraint firstAttribute="trailing" secondItem="ieB-yW-0Qs" secondAttribute="trailing" id="yuE-mJ-pmx"/>
+            </constraints>
+            <size key="customSize" width="488" height="201"/>
+            <connections>
+                <outlet property="descriptionLabel" destination="T29-F7-M7a" id="0xe-tG-gdQ"/>
+                <outlet property="moreDescriptionButton" destination="WFJ-mu-aIO" id="VDi-1o-PeO"/>
+            </connections>
+            <point key="canvasLocation" x="-56.521739130434788" y="142.29910714285714"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <namedColor name="OSTBlue">
+            <color red="0.13500000536441803" green="0.33199998736381531" blue="0.72200000286102295" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+        </namedColor>
+    </resources>
+</document>
